@@ -45,8 +45,8 @@ function main() {
   gl.clear(gl.COLOR_BUFFER_BIT)
   // gl.drawArrays(gl.LINE_LOOP, 0, n)
   // gl.drawArrays(gl.TRIANGLES, 0, n)
-  gl.drawArrays(gl.TRIANGLE_STRIP, 0, n)
-  // gl.drawArrays(gl.TRIANGLE_FAN, 0, n)
+  // gl.drawArrays(gl.TRIANGLE_STRIP, 0, n)
+  gl.drawArrays(gl.TRIANGLE_FAN, 0, n)
 }
 
 function initVertexBuffers(gl) {
@@ -71,7 +71,7 @@ function initVertexBuffers(gl) {
     // 0.8, -0.5,
     // 0.8, 0.5, 0.5,0.5
   ])
-  let n = 4;
+  let n = 4
 
   // 创建缓冲区对象
   let vertexBuffer = gl.createBuffer()
